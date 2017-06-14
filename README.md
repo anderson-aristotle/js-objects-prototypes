@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
--   [ga-wdi-boston/js-objects-constructors](https://github.com/ga-wdi-boston/js-objects-constructors)
+-   [ga-wdi-boston/js-objects-constructors](https://git.generalassemb.ly/ga-wdi-boston/js-objects-constructors)
 
 ## Objectives
 
@@ -12,7 +12,7 @@
 
 ## Preparation
 
-1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
+1.  [Fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
 1.  Change to the new directory.
 1.  Install dependencies.
@@ -60,7 +60,7 @@ const Hero = function(name, alias, power) {
 ## Lab: Add Methods to Prototypes
 
 Change the run tracker code you made in the [previous
-lesson](https://github.com/ga-wdi-boston/js-objects-constructors) to use
+lesson](https://git.generalassemb.ly/ga-wdi-boston/js-objects-constructors) to use
 prototypes.
 
 ## [License](LICENSE)
