@@ -20,7 +20,7 @@
 
 ## Prototypes
 
-In the previous lesson, we saw how to use constructors to de-duplicate effort
+In the previous lesson, we saw how to use constructors to deduplicate effort
 in creating new objects that share attributes. We learned that we should never
 define a method inside a constructor function. So how should we get behavior in
  our custom objects?
