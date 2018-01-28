@@ -20,7 +20,7 @@
 
 ## Prototypes
 
-In the previous lesson, we saw how to use constructors to de-duplicate effort
+In the previous lesson, we saw how to use constructors to deduplicate effort
 in creating new objects that share attributes. We learned that we should never
 define a method inside a constructor function. So how should we get behavior in
  our custom objects?
@@ -62,6 +62,11 @@ const Hero = function(name, alias, power) {
 Change the run tracker code you made in the [previous
 lesson](https://git.generalassemb.ly/ga-wdi-boston/js-objects-constructors) to use
 prototypes.
+
+## Additional Resources
+
+- [JavaScript Inheritance Patterns](http://davidshariff.com/blog/javascript-inheritance-patterns/)
+- [Master the JavaScript Interview](https://medium.com/javascript-scene/master-the-javascript-interview-what-s-the-difference-between-class-prototypal-inheritance-e4cd0a7562e9)
 
 ## [License](LICENSE)
 
