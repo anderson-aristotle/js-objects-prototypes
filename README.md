@@ -4,26 +4,26 @@
 
 ## Prerequisites
 
--   [ga-wdi-boston/js-objects-constructors](https://git.generalassemb.ly/ga-wdi-boston/js-objects-constructors)
+- [ga-wdi-boston/js-objects-constructors](https://git.generalassemb.ly/ga-wdi-boston/js-objects-constructors)
 
 ## Objectives
 
--   Define methods on custom objects by attaching them to the prototype
+- Define methods on custom objects by attaching them to the prototype
 
 ## Preparation
 
-1.  [Fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
+1. [Fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
-1.  Change to the new directory.
-1.  Install dependencies.
-1.  Create and checkout a new branch, `training`
+1. Change to the new directory.
+1. Install dependencies.
+1. Create and checkout a new branch, `training`
 
 ## Prototypes
 
 In the previous lesson, we saw how to use constructors to deduplicate effort
 in creating new objects that share attributes. We learned that we should never
 define a method inside a constructor function. So how should we get behavior in
- our custom objects?
+our custom objects?
 
 Remember `wonderWoman`?
 
@@ -50,18 +50,18 @@ const Hero = function(name, alias, power) {
 
 ## Code along:  add methods to prototypes
 
-1.  Create `usePower` and attach it to the constructor function's prototype.
-1.  Create a method to say the hero's name and alias. Attach it to the
+1. Create `usePower` and attach it to the constructor function's prototype.
+1. Create a method to say the hero's name and alias. Attach it to the
     prototype.
-1.  Create `batman` and `wonderWoman`. Call the method just attached.
-1.  Observe that this method isn't part of objects created using the constructor
+1. Create `batman` and `wonderWoman`. Call the method just attached.
+1. Observe that this method isn't part of objects created using the constructor
  function.
 
 ## Lab: Add Methods to Prototypes
 
 Change the run tracker code you made in the [previous
-lesson](https://git.generalassemb.ly/ga-wdi-boston/js-objects-constructors) to use
-prototypes.
+lesson](https://git.generalassemb.ly/ga-wdi-boston/js-objects-constructors) to
+use prototypes.
 
 ## Additional Resources
 
@@ -70,6 +70,6 @@ prototypes.
 
 ## [License](LICENSE)
 
-1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or
+1. All content is licensed under a CC­BY­NC­SA 4.0 license.
+1. All software code is licensed under GNU GPLv3. For commercial use or
     alternative licensing, please contact legal@ga.co.
