@@ -22,7 +22,8 @@
 
 In the previous lesson, we saw how to use constructors to deduplicate effort
 in creating new objects that share attributes. We learned that we should never
-define a method inside a constructor function. So how should we get behavior in
+define a method inside a constructor function, because we will end up with a
+copy of that function inside every instance. So how should we get behavior in
 our custom objects?
 
 Remember `wonderWoman`?
