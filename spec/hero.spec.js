@@ -3,7 +3,7 @@
 const chai = require('chai')
 const expect = chai.expect
 
-const Hero = require('../lib/hero')
+const Hero = require('../lib/hero').Hero
 
 describe('Storm', function () {
   const storm = new Hero('Ororo Iquadi T\'Challa',
