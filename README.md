@@ -8,7 +8,7 @@
 
 ## Objectives
 
-- Define methods on custom objects by attaching them to the prototype
+- Define methods on custom objects by attaching them to the prototype.
 
 ## Preparation
 
@@ -53,10 +53,10 @@ const Hero = function(name, alias, power) {
 
 1. Create `usePower` and attach it to the constructor function's prototype.
 1. Create a method to say the hero's name and alias. Attach it to the
-    prototype.
+   prototype.
 1. Create `batman` and `wonderWoman`. Call the method just attached.
 1. Observe that this method isn't part of objects created using the constructor
- function.
+   function.
 
 ## Lab: Add Methods to Prototypes
 
