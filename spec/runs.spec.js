@@ -5,39 +5,57 @@ const expect = chai.expect
 
 const runs = require('../lib/runs')
 
-describe('runs', function () {
-  const user = new runs.User('Person McFace', 'wdi@personmcface.com')
-  user.runs.push(new runs.Run('2015-05-25 15:00', 1200, 600))
-  user.runs.push(new runs.Run('2015-05-25 15:00', 1400, 800))
-
-  describe('user', function () {
-    it('has the correct name and e-mail address', function () {
-      expect(user.name).to.equal('Person McFace')
-      expect(user.email).to.equal('wdi@personmcface.com')
+describe('Run Tracker', function () {
+  const User = runs.User
+  const Run = runs.Run
+  const user = new User('Christopher Robin', 'wdi@christopherRobin.com')
+  describe('each User instance', function () {
+    it('has a name property', function () {
+      expect(Object.keys(user).includes('name')).to.equal(true)
+    })
+    it('has an email property', function () {
+      expect(Object.keys(user).includes('email')).to.equal(true)
+    })
+    it('has a runs property which is an array', function () {
+      expect(Object.keys(user).includes('runs')).to.equal(true)
+      expect(user.runs instanceof Array).to.equal(true)
+      user.runs.push(new Run('2015-05-25 15:00', 1200, 600))
+      user.runs.push(new Run('2015-05-25 15:00', 1400, 800))
+    })
+    describe('has a method totalDistance', function () {
+      it('that returns the right length', function () {
+        expect(user.totalDistance()).to.equal(2600)
+      })
+      it('is not defined in each User instance', function () {
+        expect(user.hasOwnProperty('totalDistance')).to.equal(false)
+      })
+    })
+    describe('has a method longestDistance', function () {
+      it('that returns the right length', function () {
+        expect(user.longestRunDistance()).to.equal(1400)
+      })
+      it('is not defined in each User instance', function () {
+        expect(user.hasOwnProperty('longestDistance')).to.equal(false)
+      })
+    })
+    describe('has a method averageSpeed', function () {
+      it('has an averageSpeed method that returns the correct value', function () {
+        expect(user.averageSpeed().toLocaleString('en-US')).to.equal('1.857')
+      })
+      it('is not defined in each User instance', function () {
+        expect(user.hasOwnProperty('averageSpeed')).to.equal(false)
+      })
     })
   })
-
-  describe('length', function () {
-    it('is correct', function () {
-      expect(user.runs.length).to.equal(2)
+  describe('each Run instance', function () {
+    it('has a date property', function () {
+      expect(Object.keys(new Run('2015-05-25 15:00', 1200, 600)).includes('date')).to.equal(true)
     })
-  })
-
-  xdescribe('total distance', function () {
-    it('has the correct length', function () {
-      expect(user.totalDistance()).to.equal(2600)
+    it('has a distance property', function () {
+      expect(Object.keys(new Run('2015-05-25 15:00', 1200, 600)).includes('distance')).to.equal(true)
     })
-  })
-
-  xdescribe('longest run', function () {
-    it('has the correct length', function () {
-      expect(user.longestRun()).to.equal(1400)
-    })
-  })
-
-  xdescribe('average speed', function () {
-    it('has the correct value', function () {
-      expect(user.averageSpeed().toLocaleString('en-US')).to.equal('1.857')
+    it('has a timeTaken property', function () {
+      expect(Object.keys(new Run('2015-05-25 15:00', 1200, 600)).includes('timeTaken')).to.equal(true)
     })
   })
 })
